@@ -1,8 +1,74 @@
 #navbarNav{
     justify-content: center; }
-   
-    .fondodormir{
-        background-image: url('../img/dormir.jpg');
-        background-size: cover; background-position: center
+     /*separar columnas y bordes /*/
+     
+    
+  
+    /* Elimina el fondo gris o blanco de las tarjetas */  
 
-    }
+
+/* Fondos específicos para las tarjetas */  
+.fondodormir {  
+    background-image: url('../img/dormir.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+}  
+
+.fondocardgrupal {  
+    background-image: url('../img/entrenamientogrupal.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+}  
+
+.fondoenergeticoreceta {  
+    background-image: url('../img/recetaenergica.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+}
+
+
+
+
+/* PAGINA DOS ACIVIDAD FISICA por el momento estos estilos de css estaran en la carpeta general hasta decidir si realizar una en cada pag /*
+*/
+.fondodeheroe{   background-image: url('../actividadfisica/empezaacorrer/img/pistadecorrer.jpg'); 
+ /* Cambia esto con la ruta a tu imagen */  
+    background-size: cover; /* Asegura que la imagen cubra todo el div */  
+    background-position: center; /* Centra la imagen */  
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  
+    min-height: 450px; /* Ajusta la altura mínima según sea necesario */  
+    color: white; /* Cambia el color del texto para mayor contraste */  
+    position: relative; /* Puede ser útil si agregas contenido sobre la imagen */  
+}  
+
+.tituloheroe{
+    color: white!important;
+}
+/*PIE DE PAGINA PLAYLIST*/
+
+.playlistcss{
+    align-items: center;
+}
+
+
+
+ESTILOS PARA PLAYLIST DE MUSICA
+ 
+
+.container {  
+    margin-top: 20px; /* Margen superior del contenedor */
+}  
+
+.card {  
+    margin-bottom: 20px; /* Espaciado entre las tarjetas  */
+}  
+
+.card-title {  
+    text-align: center; /* Centrar el título de la tarjeta   */
+} 
+.fondodegrade{
+    background: linear-gradient(to bottom, #005980, #ffaf80, #f14f2b);
+}
