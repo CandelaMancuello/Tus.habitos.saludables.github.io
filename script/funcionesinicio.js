@@ -10,9 +10,8 @@ function calcularDias(fechaReferencia) {
 // Fechas de publicacion
 const fechaBase1 = "2025-01-25"; 
 const fechaBase2 = "2025-02-03"; 
-const fechaBase3 = "2025-01-31"; 
+
 
 // Asignar valores dinámicamente
 document.getElementById("date1").textContent = calcularDias(fechaBase1);
 document.getElementById("date2").textContent = calcularDias(fechaBase2);
-document.getElementById("date3").textContent = calcularDias(fechaBase3);

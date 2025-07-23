@@ -98,7 +98,7 @@ font-family: "Barlow Condensed", sans-serif;
 
 /* PAGINA DOS ACIVIDAD FISICA /*
 */
-.fondodeheroe{   background-image: url('../gym/img/pistadecorrer.png'); 
+.fondodeheroe{   background-image: url('../running/img/pistadecorrer.png'); 
  /* Cambia esto con la ruta a tu imagen */  
     background-size: cover; /* Asegura que la imagen cubra todo el div */  
     background-position: center; /* Centra la imagen */  
