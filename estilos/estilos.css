@@ -98,7 +98,7 @@ font-family: "Barlow Condensed", sans-serif;
 
 /* PAGINA DOS ACIVIDAD FISICA /*
 */
-.fondodeheroe{   background-image: url('../actividadfisica/empezaacorrer/img/pistadecorrer.jpg'); 
+.fondodeheroe{   background-image: url('../gym/img/pistadecorrer.png'); 
  /* Cambia esto con la ruta a tu imagen */  
     background-size: cover; /* Asegura que la imagen cubra todo el div */  
     background-position: center; /* Centra la imagen */  
@@ -138,7 +138,7 @@ font-family: "Barlow Condensed", sans-serif;
 
 /*pagina de recetas*/ 
 
-li{ 
+.ul { 
     justify-content: center;
     list-style-type: none;
     align-items: center;
@@ -150,6 +150,15 @@ li{
     height: 40px;
  margin: 10px;
 }
+/*pagina de rutina muscular*/ 
+.bannergym{
+    background-color:#6cabff ;
+    padding-top: 20px;
+   height: 150px;
+  
+   
+} 
+
 
 
 /* Media query para desktop */
@@ -168,8 +177,8 @@ li{
         
     .carousel-item img {
   width: 100%;
-  height: 400px; /* o cualquier altura que desees */
-  object-fit: cover; /* para que la imagen llene sin deformarse */
+  height: 400px; 
+  object-fit: cover; /
 }
     body{
 font-family: "Barlow Condensed", sans-serif;
@@ -223,5 +232,24 @@ font-family: "Barlow Condensed", sans-serif;
     font-size: x-large;
   
 }
+/*pagina rutinamuscular*/
+.bannergym{
+    background-color:#f9a490 ;
+    height: 150px;
+    padding-top: 20px;
+ 
+} 
+ .featurette-divider{
+color:#004aad;
+    border-top: 5px solid #004aad;
+    margin: 20px 0;
+ }
 
-}    
+
+/*pagina de recetas*/
+.recetas-lista {
+    justify-content: center;
+    list-style-type: none !important;
+    align-items: center;
+}
+  }
