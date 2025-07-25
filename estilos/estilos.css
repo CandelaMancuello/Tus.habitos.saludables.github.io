@@ -103,7 +103,7 @@ font-family: "Barlow Condensed", sans-serif;
     background-size: cover; /* Asegura que la imagen cubra todo el div */  
     background-position: center; /* Centra la imagen */  
     background-repeat: no-repeat; /* Evita que la imagen se repita */  
-    min-height: 450px; /* Ajusta la altura mínima según sea necesario */  
+    min-height: 390px; /* Ajusta la altura mínima según sea necesario */  
     color: white; /* Cambia el color del texto para mayor contraste */  
     position: relative; /* Puede ser útil si agregas contenido sobre la imagen */  
 }  
@@ -158,6 +158,10 @@ font-family: "Barlow Condensed", sans-serif;
   
    
 } 
+/*pagina para indumentaria mobile*/ 
+.fondoindumentaria, .py-5{
+    background-color: rgb(255, 134, 130);
+}
 
 
 
@@ -169,7 +173,8 @@ font-family: "Barlow Condensed", sans-serif;
         margin-left: 20px;
         margin-right: 20px;
               }
-              /*logotipo centrrado*/
+
+ /*logotipo centrrado*/
 .navbar-brand {
     margin-right: 0%;
     padding-left: 30px;
@@ -232,10 +237,13 @@ font-family: "Barlow Condensed", sans-serif;
     font-size: x-large;
   
 }
+.banneriniciohome{
+    margin-top: 48px;
+}
 /*pagina rutinamuscular*/
 .bannergym{
     background-color:#f9a490 ;
-    height: 150px;
+    height: 390px;
     padding-top: 20px;
  
 } 
@@ -252,4 +260,50 @@ color:#004aad;
     list-style-type: none !important;
     align-items: center;
 }
+.fondodesktop {
+  background: linear-gradient(to top, #ff7e5f, #ebb09e); /* Degradado de izquierda a derecha entre dos colores */
+  padding-bottom:20px;
+}
+
+/*pagina para indumentaria*/ 
+.fondoindumentaria, .py-5{
+    margin-top: 48px;
+    background-color: rgb(176, 173, 199);
+}
+.bannernutri{
+    background-image: url('../nutricion/img/fondoalimentosbanner.jpg'); 
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    height:390px;
+    color: rgb(255, 255, 255);
+   
+
+ 
+ 
+}
+.textobannernutri{
+    
+    padding-top:55px;
+
+  
+
+}
+
+.imgnutricion img{
+  
+  width:400px;
+    height: 400px;
+
+}
+/*textos de la pagina de nutricio*/
+.parrafonutricion{
+    font-size: 1.9rem;
+}
+.headernutri{
+
+ font-size: 2rem;
+
+}
+
+
+
   }
