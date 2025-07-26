@@ -162,10 +162,114 @@ font-family: "Barlow Condensed", sans-serif;
 .fondoindumentaria, .py-5{
     background-color: rgb(255, 134, 130);
 }
+/* ============================
+   Estilos base para mobile (debes tener esto ya en tu CSS)
+   ============================
+*/
+
+body .htmljuego {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* ejemplo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la sección de juego y cards (mobile first) */
+
+#juego {
+  display: none; /* oculta por defecto; mostrar con JS cuando inicies */
+  padding: 20px;
+}
+
+#juego h2 {
+  margin-bottom: 20px;
+}
+
+.contenedor-juego {
+  /* Para centrar la sección en móviles si quieres */
+  padding: 10px;
+}
+
+/* Estilos para los cards de cada comida */
+#juego .card {
+  height: 20rem; /* ajusta a tu preferencia, ejemplo: para mobile es alto fijo y compacto */
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff; /* texto blanco si la background lo permite */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333; /* por si no pones background-image en inline */
+  background-size: cover; 
+  background-position: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#juego .card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+#juego h5.card-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+ }
+
+/* Botones de alimentos (dentro de "alimentos") */
+.alimentos button {
+  margin: 4px;
+  border: none;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.alimentos button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo para input y botones en la parte superior (nombre, comenzar) */
+#nombre-usuario {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#comenzar-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+/* Resultado final y finalizar botón */
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#finalizar-btn {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+}
 
 
-
-/* Media query para desktop */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
 
 @media (min-width : 1024px) {
     /*navbar*/ 
@@ -303,6 +407,40 @@ color:#004aad;
  font-size: 2rem;
 
 }
+/*JUEGO*/ 
+/*Este codigo es con ayuda de chat gpt SIDER para hacer ajustes a los estilos html del juego */ 
+
+
+
+/* ============================
+   Media queries para Desktop (min-width: 1024px)
+   ============================ */
+
+
+  /* Aquí ajustas el tamaño de las cards si quieres, o la disposición */
+
+  #juego .card {
+    height: auto; /* ajusta a contenido, o pon mayor altura si quieres */
+  }
+
+  /* Puedes ampliar el tamaño de las fuentes, botones, etc. */
+  #nombre-usuario {
+    width: 300px; /* tamaño fijo en desktop */
+  }
+
+  #comenzar-btn {
+    font-size: 1.4rem;
+  }
+
+  /* Si quieres que las cards sean más grandes en desktop, ajusta aquí */
+  /* Ejemplo: */
+   #juego .card {
+       height: 30rem;
+     }
+
+
+
+
 
 
 
