@@ -366,4 +366,25 @@ color:#004aad;
 
 
 }
+/* Contenedor responsive para video de YouTube */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px; /* Opcional: limita el ancho máximo en pantallas grandes */
+  margin: 0 auto; /* Centra el video */
+}
+
+/* Iframe ocupa todo el contenedor */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
   }
