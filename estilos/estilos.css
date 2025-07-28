@@ -373,8 +373,7 @@ color:#004aad;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
-  max-width: 800px; /* Opcional: limita el ancho máximo en pantallas grandes */
-  margin: 0 auto; /* Centra el video */
+ 
 }
 
 /* Iframe ocupa todo el contenedor */
