@@ -1,0 +1,369 @@
+#navbarNav{
+    justify-content: center; }
+     /*separar columnas y bordes /*/
+     
+    
+  
+    /* Elimina el fondo gris o blanco de las tarjetas */  
+/*estilos de fuente*/
+   body{
+font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0
+  
+  }
+/*INICIO*/
+/*estilos para video de PORTADA*/ 
+.hero-container {  
+    position: relative;  
+    overflow: hidden;  
+    height: 100vh; /* Ajusta la altura según tus necesidades */  
+}  
+
+ /* Estilos para las imágenes del inicio (mobile) */  
+#conjuntoinicio {  
+    position: relative; /* Asegúrate de que el contenedor tenga posición relativa */  
+    text-align: center; /* Centrar contenido si es necesario */  
+    margin-bottom: 10px; /* Espacio debajo del grupo de imágenes */  
+}  
+
+.imagenverticalMobile {  
+    width: 110px;  
+    position: relative; /* Cambiado a relativa para que se coloque en el flujo normal */  
+    margin-bottom: -50px; /* Ajusta según el espaciado que necesites */  
+    z-index: 10;  
+    left:100px;
+    bottom: -95px;
+}  
+
+.imagenhorizontalMobile {  
+    width: 350px;  
+    position: relative; /* Cambiado a relativa para que se coloque en el flujo normal */  
+    filter: brightness(0.7);  
+    margin-top: -40px; /* Ajusta según el espaciado que necesites */  
+}  
+
+.container {  
+    clear: both; /* Asegúrate que el contenedor del texto no esté afectado por las imágenes flotantes */
+  
+}  
+
+/* Opcional: Si deseas más espacio entre el texto y las imágenes */  
+.featurette {  
+    margin-top: 20px; /* Ajusta este valor para más o menos espacio */  
+}
+/*MAIN pagina de inicio mobile*/ 
+
+
+
+/*CONTENEDOR DE CARD DEL INICIO*/ 
+
+
+/* Fondos específicos para las tarjetas  pagina de habitos saludables trasladar */  
+.fondodormir {  
+    background-image: url('../img/dormir.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+   
+}  
+/*trasladar a pagina de habitos saludables */
+.fondocardgrupal {  
+    background-image: url('../img/entrenamientogrupal.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+  
+}  
+/* va en el inicio y pagina saludables FONDO DE CARD*/ 
+.fondoenergeticoreceta {  
+    background-image: url('../img/recetaenergica.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+
+}
+/* FONDO DE CARD  de "tus primeros 5km" */
+.primeroskm{
+    background-image: url('../img/primeroskm.jpg');  
+    background-size: cover;   
+    background-position: center;  
+    border-radius: 15px;  
+}
+
+
+
+
+
+/* PAGINA DOS ACIVIDAD FISICA /*
+*/
+.fondodeheroe{   background-image: url('../running/img/pistadecorrer.png'); 
+ /* Cambia esto con la ruta a tu imagen */  
+    background-size: cover; /* Asegura que la imagen cubra todo el div */  
+    background-position: center; /* Centra la imagen */  
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  
+    min-height: 390px; /* Ajusta la altura mínima según sea necesario */  
+    color: white; /* Cambia el color del texto para mayor contraste */  
+    position: relative; /* Puede ser útil si agregas contenido sobre la imagen */  
+}  
+
+.tituloheroe{
+    color: white!important;
+}
+/*PIE DE PAGINA PLAYLIST*/
+
+.playlistcss{
+    align-items: center;
+}
+
+
+
+/*ESTILOS PARA PLAYLIST DE MUSICA*/
+ 
+
+.container {  
+    margin-top: 20px; /* Margen superior del contenedor */
+}  
+
+.card {  
+    margin-bottom: 20px; /* Espaciado entre las tarjetas  */
+}  
+
+.card-title {  
+    text-align: center; /* Centrar el título de la tarjeta   */
+} 
+
+
+
+/*pagina de recetas*/ 
+
+.ul { 
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+}
+
+/*ICONS FOOTER*/
+.icons svg{
+    width: 30px;
+    height: 40px;
+ margin: 10px;
+}
+/*pagina de rutina muscular*/ 
+.bannergym{
+    background-color:#6cabff ;
+    padding-top: 20px;
+   height: 150px;
+  
+   
+} 
+/*pagina para indumentaria mobile*/ 
+.fondoindumentaria{
+    background-color: rgb(255, 134, 130);
+}
+/* ============================
+   Estilos base para mobile 
+   ============================
+*/
+/* ============================
+   Estilos base para mobile 
+   ============================
+*/
+/* ============================   Estilos base para mobile 
+   ============================
+*/
+
+
+
+
+
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+/*MEDIAQUERYS DESKTOP */
+
+@media (min-width : 1024px) {
+    /*navbar*/ 
+.navbar-expand-lg .navbar-nav .nav-link{
+        margin-left: 20px;
+        margin-right: 20px;
+              }
+
+ /*logotipo centrrado*/
+.navbar-brand {
+    margin-right: 0%;
+    padding-left: 30px;
+  }
+        
+    .carousel-item img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; /
+}
+    body{
+font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0;
+  
+  }
+    .contenedor-header {
+       width: 95%;
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+	
+/*imagenes del INICIO DEL HOME */
+.imagenvertical{
+    position: absolute;
+   bottom:-600px;
+    left: 950px;
+    width: 22%;
+  
+ }
+ .imagenhorizontal{
+     position: absolute;
+     bottom:-622px;
+      left: 350px;
+      width: 60%;
+      filter: brightness(0.5);
+      z-index: -15;
+    }
+ /*PARRAFO*/
+ 
+ .contenedorrelativo{
+     position:relative;
+ }
+ 
+ 
+ 
+ /*CONTENEDOR DE CARD DEL INICIO*/ 
+ .estilosdeCardsInicio{
+   margin-top:  20px;
+   padding-top: 4rem !important;
+ 
+ }
+
+#navbarNav, .container-fluid{
+    background-color: rgb(255, 255, 255);
+    
+}
+#navbarNav{
+    height: 60px !important;
+    font-size: x-large;
+  
+}
+.banneriniciohome{
+    margin-top: 48px;
+}
+/*pagina rutinamuscular*/
+.bannergym{
+    background-color:#f9a490 ;
+    height: 390px;
+    padding-top: 20px;
+ 
+} 
+ .featurette-divider{
+color:#004aad;
+    border-top: 5px solid #004aad;
+    margin: 20px 0;
+ }
+
+
+/*pagina de recetas*/
+.recetas-lista {
+    justify-content: center;
+    list-style-type: none !important;
+    align-items: center;
+}
+.fondodesktop {
+  background: linear-gradient(to top, #ff7e5f, #ebb09e); /* Degradado de izquierda a derecha entre dos colores */
+  padding-bottom:20px;
+}
+
+/*pagina para indumentaria*/
+.fondoindumentaria {
+    margin-top: 48px;
+    background-color: rgb(209, 205, 236);
+}
+.bannernutri{
+    background-image: url('../nutricion/img/fondoalimentosbanner.jpg'); 
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    height:390px;
+    color: rgb(255, 255, 255);
+   
+
+ 
+ 
+}
+.textobannernutri{
+    
+    padding-top:55px;
+
+  
+
+}
+
+.imgnutricion img{
+  
+  width:400px;
+    height: 400px;
+
+}
+/*textos de la pagina de nutricio*/
+.parrafonutricion{
+    font-size: 1.9rem;
+}
+.headernutri{
+
+ font-size: 2rem;
+
+}
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+ body {
+      font-family: 'Barlow Condensed', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .btn-opcion {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    .barra-salud {
+      height: 25px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .barra-inner {
+      height: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+    /*habitos saludables*/ 
+.headerhabitos{
+    background-color: #f7b02d;
+    height: 350px;
+     
+}
+.headerhabitos p{
+   font-size: 2rem;
+}
+/*pagina de obten tus primeros 5km*/
+
+.contenedor-header5km {
+
+
+ background-image: url('../mas/obtentusprimeroskm/img/maraton-personas.jpg') !important; 
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    height:390px;
+    color: rgb(255, 255, 255);
+
+
+}
+  }
