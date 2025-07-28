@@ -1,20 +1,18 @@
-<!DOCTYPE html>  
-<html lang="es">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Trivia para obtener descuentos!</title>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  
-    <link href="../../estilos/estilos.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Saludable</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../estilos/estilos.css" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
-</head>  
-<body class="htmljuego">  
-
+</head>
+<body>
   <header>
-<!--navegador y dropdows-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">  
     <div class="container-fluid">  
         <a class="navbar-brand" href="index.html">  
@@ -26,91 +24,70 @@
         <div class="collapse navbar-collapse" id="navbarNav">  
             <ul class="navbar-nav">  
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="../../index.html">Inicio</a>
                   </li> 
-             <li class="nav-item">
-                    <a class="nav-link" href="../running/index.html">Running</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="running/index.html">Running</a>
                   </li>  
                    <li class="nav-item">
-                    <a class="nav-link" href="../gym/index.html">Gym</a>
+                    <a class="nav-link" href="gym/index.html">Gym</a>
                   </li>  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Nutrición</a>
+                    <a class="nav-link" href="nutricion/index.html">Nutrición</a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link" href="../recetasfit/index.html">Recetas fit</a>
+                    <a class="nav-link" href="recetasfit/index.html">Recetas fit</a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hábitos saludables</a>
+                    <a class="nav-link" href="habitossaludables/index.html">Hábitos saludables</a>
                   </li>
                     <li class="nav-item dropdown">  
                     <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
                         Más
                     </a>  
-                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">  
-                        <li><a class="dropdown-item" href="actividadfisica/empezaacorrer/index.html">juego</a></li>  
-                        <li><a class="dropdown-item" href="actividadfisica/rutinamuscular/index.html">Tus primeros 5 km</a></li> 
-                        <li><a class="dropdown-item" href="actividadfisica/empezaacorrer/index.html">Indumentaria para entrenar</a></li>  
-                        <li><a class="dropdown-item" href="actividadfisica/rutinamuscular/index.html">Meditación guíada</a></li>   
+                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">  
+                        <li><a class="dropdown-item" href="mas/juego/index.html">juego</a></li>  
+                        <li><a class="dropdown-item" href="mas/obtentusprimeroskm/index.html">Tus primeros 5 km</a></li> 
+                        <li><a class="dropdown-item" href="mas/ropaparaentrenar/index.html">Indumentaria para entrenar</a></li>  
+                        <li><a class="dropdown-item" href="mas/meditacionguiada/index.html">Meditación guíada</a></li>   
                         <li><hr class="dropdown-divider"></li>  
-                        <li><a class="dropdown-item" href="#">Prevenir lesiones</a></li>  
+                        <li><a class="dropdown-item" href="mas/prevenirlesiones/index.html">Prevenir lesiones</a></li>  
                     </ul>  
                 </li>
                 </ul>
               </div>  
     </div>    
-</nav>  
+</nav>
 </header>
-
-<!-- Sección de inicio para ingresar nombre y comenzar -->
-<div class="contenedor-inicio text-center py-4" id="inicio">
-  <h1 class="mb-3">Planificador de Comidas Saludables</h1>
-  <input type="text" id="nombre-usuario" class="form-control mb-3" placeholder="Ingresa tu nombre" />
-  <button id="btn-comenzar" class="btn btn-primary">Iniciar Juego</button>
-</div>
-
-<!-- Sección principal del juego (oculta al inicio) -->
-<div class="container d-none" id="juego">
-
-  <!-- Sección desayuno -->
-  <div id="seccion-desayuno" class="seccion-comida d-none">
-    <h2>Desayuno</h2>
-    <!-- Aquí irían tus cards dinámicos, por ahora un placeholder -->
-    <div id="desayuno-cards" class="row"></div>
-    <button class="btn btn-success mt-3" id="btn-continuar-desayuno">Guardar Desayuno y Continuar</button>
-  </div>
-<!--MOSTRAR ESTO DESPUES DE ENVIAR DESAYUNO-->
-  <!-- Sección almuerzo -->
-  <div id="seccion-almuerzo" class="seccion-comida d-none">
-    <h2>Almuerzo</h2>
-    <div id="almuerzo-cards" class="row"></div>
-    <button class="btn btn-success mt-3" id="btn-continuar-almuerzo">Guardar Almuerzo y Continuar</button>
-  </div>
-
-  <!-- Sección cena -->
-  <div id="seccion-cena" class="seccion-comida d-none">
-    <h2>Cena</h2>
-    <div id="cena-cards" class="row"></div>
-    <button class="btn btn-success mt-3" id="btn-finalizar">Finalizar</button>
-  </div>
-
-  <!-- Resultado final -->
-  <div id="resultado" class="mt-4 d-none"></div>
+<main class="container py-4">
+ <div id="inicio-section" class="container my-5">
+  <input type="text" id="nombre" class="form-control mb-2" placeholder="Ingresa tu nombre" />
+  <input type="email" id="email" class="form-control mb-2" placeholder="Ingresa tu correo" />
+  <button id="btn-start" class="btn btn-primary w-100">Iniciar Juego</button>
 </div>
 
 
+  <div id="juego-section" class="d-none">
+    <div id="bienvenido" class="mb-4"></div>
+    <h2 id="pregunta" class="mb-3"></h2>
+    <div id="opciones" class="row g-2 mb-3"></div>
+    <button id="btn-enviar" class="btn btn-primary w-100" disabled>Enviar</button>
+    <div id="contador" class="mt-2 text-center"></div>
+  </div>
 
-
+  <div id="resultado-section" class="d-none">
+    <div id="resultado" class="my-3"></div>
+    <div class="mb-3">
+      <div class="barra-salud bg-secondary">
+        <div id="barra-energia" class="barra-inner"></div>
+      </div>
+    </div>
+    <button id="btn-reiniciar" class="btn btn-outline-dark w-100">Reiniciar Juego</button>
+  </div>
+  
 </main>
 
-
-
-
-
-
-
-
-  <!--FOOTER-->
+ <!--FOOTER-->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
@@ -127,5 +104,6 @@
   </div>
 
 <script src="juego.js"></script>
+
 </body>
 </html>

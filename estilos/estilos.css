@@ -159,109 +159,23 @@ font-family: "Barlow Condensed", sans-serif;
    
 } 
 /*pagina para indumentaria mobile*/ 
-.fondoindumentaria, .py-5{
+.fondoindumentaria{
     background-color: rgb(255, 134, 130);
 }
 /* ============================
-   Estilos base para mobile (debes tener esto ya en tu CSS)
+   Estilos base para mobile 
+   ============================
+*/
+/* ============================
+   Estilos base para mobile 
+   ============================
+*/
+/* ============================   Estilos base para mobile 
    ============================
 */
 
-body .htmljuego {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa; /* ejemplo */
-  margin: 0;
-  padding: 0;
-}
 
-/* Estilos para la sección de juego y cards (mobile first) */
 
-#juego {
-  display: none; /* oculta por defecto; mostrar con JS cuando inicies */
-  padding: 20px;
-}
-
-#juego h2 {
-  margin-bottom: 20px;
-}
-
-.contenedor-juego {
-  /* Para centrar la sección en móviles si quieres */
-  padding: 10px;
-}
-
-/* Estilos para los cards de cada comida */
-#juego .card {
-  height: 20rem; /* ajusta a tu preferencia, ejemplo: para mobile es alto fijo y compacto */
-  border-radius: 10px;
-  overflow: hidden;
-  color: #fff; /* texto blanco si la background lo permite */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #333; /* por si no pones background-image en inline */
-  background-size: cover; 
-  background-position: center;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-#juego .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-#juego h5.card-title {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  margin: 0;
-  border-radius: 5px;
-  font-size: 1rem;
- }
-
-/* Botones de alimentos (dentro de "alimentos") */
-.alimentos button {
-  margin: 4px;
-  border: none;
-  padding: 4px;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.alimentos button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-}
-
-/* Estilo para input y botones en la parte superior (nombre, comenzar) */
-#nombre-usuario {
-  width: 80%;
-  max-width: 300px;
-  padding: 10px;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-#comenzar-btn {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 8px;
-}
-
-/* Resultado final y finalizar botón */
-#resultado {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-#finalizar-btn {
-  padding: 15px 30px;
-  font-size: 1.3rem;
-}
 
 
 /*MEDIAQUERYS DESKTOP */
@@ -369,10 +283,10 @@ color:#004aad;
   padding-bottom:20px;
 }
 
-/*pagina para indumentaria*/ 
-.fondoindumentaria, .py-5{
+/*pagina para indumentaria*/
+.fondoindumentaria {
     margin-top: 48px;
-    background-color: rgb(176, 173, 199);
+    background-color: rgb(209, 205, 236);
 }
 .bannernutri{
     background-image: url('../nutricion/img/fondoalimentosbanner.jpg'); 
@@ -407,41 +321,49 @@ color:#004aad;
  font-size: 2rem;
 
 }
-/*JUEGO*/ 
-/*Este codigo es con ayuda de chat gpt SIDER para hacer ajustes a los estilos html del juego */ 
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+/*estilos bonitos del juego */
+ body {
+      font-family: 'Barlow Condensed', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .btn-opcion {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    .barra-salud {
+      height: 25px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .barra-inner {
+      height: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+    /*habitos saludables*/ 
+.headerhabitos{
+    background-color: #f7b02d;
+    height: 350px;
+     
+}
+.headerhabitos p{
+   font-size: 2rem;
+}
+/*pagina de obten tus primeros 5km*/
+
+.contenedor-header5km {
 
 
-
-/* ============================
-   Media queries para Desktop (min-width: 1024px)
-   ============================ */
-
-
-  /* Aquí ajustas el tamaño de las cards si quieres, o la disposición */
-
-  #juego .card {
-    height: auto; /* ajusta a contenido, o pon mayor altura si quieres */
-  }
-
-  /* Puedes ampliar el tamaño de las fuentes, botones, etc. */
-  #nombre-usuario {
-    width: 300px; /* tamaño fijo en desktop */
-  }
-
-  #comenzar-btn {
-    font-size: 1.4rem;
-  }
-
-  /* Si quieres que las cards sean más grandes en desktop, ajusta aquí */
-  /* Ejemplo: */
-   #juego .card {
-       height: 30rem;
-     }
+ background-image: url('../mas/obtentusprimeroskm/img/maraton-personas.jpg') !important; 
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    height:390px;
+    color: rgb(255, 255, 255);
 
 
-
-
-
-
-
+}
   }
