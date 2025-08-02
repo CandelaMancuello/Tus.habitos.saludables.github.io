@@ -287,15 +287,10 @@ font-family: "Barlow Condensed", sans-serif;
 
 }
 
-.imgnutricion img{
-  
-  width:400px;
-    height: 400px;
 
-}
 /*textos de la pagina de nutricio*/
 .parrafonutricion{
-    font-size: 1.9rem;
+    font-size: 1.2rem;
 }
 .headernutri{
 
@@ -449,7 +444,10 @@ color:#f5e7e3
   font-size: 1.3em;
 
 }
+.colordecardsletras{
+color:#b8003d;
 
+}
 
   
    }
