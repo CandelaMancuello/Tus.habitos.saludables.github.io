@@ -59,36 +59,43 @@
     </div>    
 </nav>
 </header>
-<main class="container py-4">
-  <div class="introContainer"> <!-- esta linea es especifica porque le agrege un nuevo estilo de boostrap-->
-    <!--son como 2 cards que muestran una introduccion, reglas y a la derecha el formulario del jueggo-->
-    <!-- la classe introContainer lo que hace es ocultar ese nuevo estilo una vez que comienza el juego-->
-  <!-- Aquí va toda esa parte de introducción y visuales -->
+<main class="container py-4   juegomobile">
+ <div class="introContainer container"> <!-- Agregamos 'container' para un mejor padding en mobile -->
 
-<div class="d-flex flex-row justify-content-between">
+  <!-- Row principal que se adapta según el tamaño de pantalla -->
+  <div class="row gy-4 centrar">
 
-  <div class="row align-items-md-stretch" style="flex:1; margin-right:10px;">
-    <div class="fondojuego h-100 p-5 rounded-3"> 
-      <h2>Trivia Saludable</h2> 
-      <p>Las reglas son sencillas: tenes que elegir por cada pregunta 3 opciones, las más saludables tendrán más puntajes. Una vez finalizada la trivia, se sumarán los puntajes obtenidos y podrás obtener un descuento de compra.</p>
-  Cada opción que elijas tendrá cierto puntaje (sí es saludable o no, o si la pregunta pide "priorizar proteínas").
-  Si no respondes a tiempo, en 15 segundos, se te descontarán 2 puntos por respuestas.
-  Recuerda que hay alimentos que suman muy poco puntaje.</p>
-    </div>
-  </div>
-
-  <!-- Segundo div: Formulario -->
-  <div class="row align-items-md-stretch" style="flex:1; margin-left:10px;">
-    <div class="fondojuegoformulario h-100 p-5 border rounded-3">
-      <div class="inicio-section container my-5">
-        <input type="text" class="nombre form-control mb-2" placeholder="Ingresa tu nombre" />
-        <input type="email" class="email form-control mb-2" placeholder="Ingresa tu correo" />
-        <button class="btn-start btn-visually-impactful">Iniciar Juego</button>
+    <!-- Primer bloque: texto de introducción -->
+    <div class="col-12 col-md-6">
+      <div class="fondojuego h-100 p-4 rounded-3">
+        <h2>Trivia Saludable</h2>
+        <p>
+          Las reglas son sencillas: tenés que elegir por cada pregunta 3 opciones; las más saludables tendrán más puntajes.
+          Una vez finalizada la trivia, se sumarán los puntajes obtenidos y podrás obtener un descuento de compra.
+        </p>
+        <p>
+          Cada opción que elijas tendrá cierto puntaje (sí es saludable o no, o si la pregunta pide "priorizar proteínas").
+          Si no respondés a tiempo (15 segundos), se te descontarán 2 puntos por respuestas.
+          Recuerda que hay alimentos que suman muy poco puntaje.
+        </p>
       </div>
     </div>
+
+    <!-- Segundo bloque: formulario -->
+    <div class="col-12 col-md-6">
+      <div class="fondojuegoformulario h-100 p-4 border rounded-3">
+        <div class="inicio-section">
+          <input type="text" class="nombre form-control mb-3" placeholder="Ingresa tu nombre" />
+          <input type="email" class="email form-control mb-3" placeholder="Ingresa tu correo" />
+          <button class="btn-start btn-visually-impactful w-100">Iniciar Juego</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
-</div>
+
+
 
 
 <div class="resultado-descuento"></div>

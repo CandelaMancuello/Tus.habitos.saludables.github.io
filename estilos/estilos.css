@@ -154,7 +154,30 @@ font-family: "Barlow Condensed", sans-serif;
     padding:20px;
     background-color: #e9e0c3;
 }
+/*juego mobile*/
+ .fondojuego {
+    background-color:#004aad; /* un celestito claro */
+    color: #ffffff ;/* texto oscuro */
+ 
+  } 
+  /*evitar el scroll*/ 
+  .juegomobile{
+    margin:0px;
+     padding:0px
+  }
 
+  .fondojuegoformulario {
+    background-color: #ff8682 ;/* gris claro */
+    color: #333;
+    border: 1px solid #ccc;
+  }
+
+  /* Botón más suave en mobile */
+  .btn-start {
+    background-color: #1b3c42;
+    color: white;
+    border: none;
+  }
 
 /*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP */
 
@@ -464,5 +487,10 @@ color:#b8003d;
     padding: 15px 30px;
     border: 3px solid #0069d9; /* borde más grueso y en tono más oscuro */
     font-size: 1.2em;
+  }
+  
+    .juegomobile{
+    margin:auto;
+     padding:auto;
   }
    }

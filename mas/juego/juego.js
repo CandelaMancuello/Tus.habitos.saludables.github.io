@@ -92,13 +92,12 @@ btnStart.onclick = () => {
   const nombre = nombreInput.value.trim();
   const email = emailInput.value.trim();
 
-  if (nombre === "" || email === "") {
+  if (nombre === "" || email ===  "") {
     alert("Por favor, completá tu nombre y correo.");
     return;
   }
 
   const jugadores = JSON.parse(localStorage.getItem("jugadores") || "[]"); 
-  console.log("Jugadores guardados:", jugadores.map(j => j.email));
 
   const yaJugado = jugadores.some(j => j.email === email);
   if (yaJugado) {
@@ -106,7 +105,7 @@ btnStart.onclick = () => {
     return;
   }
 
-  jugadores.push({ nombre, email }); // Guarda email sin codificar
+  jugadores.push({ nombre, email }); // guarda el email sin codificar
   localStorage.setItem("jugadores", JSON.stringify(jugadores));
 
   bienvenido.innerHTML = `<p class="alert alert-success">¡Hola ${nombre}! Vas a jugar 5 rondas. Seleccioná 3 alimentos en cada una. Tenés 10 segundos para responder. ¡A jugar!</p>`;
