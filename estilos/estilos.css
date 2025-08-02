@@ -174,7 +174,7 @@ font-family: "Barlow Condensed", sans-serif;
 
   /* Botón más suave en mobile */
   .btn-start {
-    background-color: #1b3c42;
+    background-color: #004aad; 
     color: white;
     border: none;
   }
