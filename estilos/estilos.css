@@ -92,31 +92,10 @@ font-family: "Barlow Condensed", sans-serif;
     border-radius: 15px;  
 }
 
-
-
-
-
-/* PAGINA DOS ACIVIDAD FISICA /*
-*/
-.fondodeheroe{   background-image: url('../running/img/pistadecorrer.png'); 
- /* Cambia esto con la ruta a tu imagen */  
-    background-size: cover; /* Asegura que la imagen cubra todo el div */  
-    background-position: center; /* Centra la imagen */  
-    background-repeat: no-repeat; /* Evita que la imagen se repita */  
-    min-height: 390px; /* Ajusta la altura mínima según sea necesario */  
-    color: white; /* Cambia el color del texto para mayor contraste */  
-    position: relative; /* Puede ser útil si agregas contenido sobre la imagen */  
-}  
-
 .tituloheroe{
     color: white!important;
 }
-/*PIE DE PAGINA PLAYLIST*/
 
-
-
-
-/*ESTILOS PARA PLAYLIST DE MUSICA*/
  
 
 .container {  
@@ -147,21 +126,9 @@ font-family: "Barlow Condensed", sans-serif;
     height: 40px;
  margin: 10px;
 }
-/*pagina de rutina muscular*/ 
-.bannergym{
-     background-image: url('../gym/img/fondoheader.jpg');
- 
- /* Cambia esto con la ruta a tu imagen */  
-    background-size: cover; /* Asegura que la imagen cubra todo el div */  
-    background-position: center; /* Centra la imagen */  
-    background-repeat: no-repeat; /* Evita que la imagen se repita */  
-    min-height: 390px; /* Ajusta la altura mínima según sea necesario */  
-    color: white; /* Cambia el color del texto para mayor contraste */  
-    position: relative; /* Puede ser útil si agregas contenido sobre la imagen */ 
 
-  
-   
-} 
+
+
 /*pagina para indumentaria mobile*/ 
 .fondoindumentaria{
     background-color: #ff8682;
@@ -184,9 +151,6 @@ font-family: "Barlow Condensed", sans-serif;
     background-color: #004aad;
     padding: 10px;
 }
-
-
-
 
 
 
@@ -219,7 +183,7 @@ font-family: "Barlow Condensed", sans-serif;
   }
     .contenedor-header {
        width: 95%;
-        margin: 0 auto; /* Centrar el contenedor */
+       
     }
 	
 /*imagenes del INICIO DEL HOME */
@@ -277,16 +241,7 @@ font-family: "Barlow Condensed", sans-serif;
 .banneriniciohome{
     margin-top: 48px;
 }
-/*pagina rutinamuscular*/
-.bannergym{
-    background-image: url('../gym/img/fondoheader.jpg') !important; 
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    height:390px;
-    color: rgb(255, 255, 255);
-    width: 93%;
-        margin: 0px, 27.5px;
-        padding: 0px, 12px;
-} 
+
  .featurette-divider{
 
     border-top: 5px solid#5a43e1;
@@ -322,16 +277,7 @@ font-family: "Barlow Condensed", sans-serif;
     margin-top: 48px;
     background-color: rgb(209, 205, 236);
 }
-.bannernutri{
-    background-image: url('../nutricion/img/fondoalimentosbanner.jpg'); 
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    height:390px;
-    color: rgb(255, 255, 255);
-   
 
- 
- 
-}
 .textobannernutri{
     
     padding-top:55px;
@@ -379,27 +325,9 @@ font-family: "Barlow Condensed", sans-serif;
       color: white;
       font-weight: bold;
     }
-    /*habitos saludables*/ 
-.headerhabitos{
-    background-color: #f7b02d;
-    height: 350px;
-     
-}
-.headerhabitos p{
-   font-size: 2rem;
-}
-/*pagina de obten tus primeros 5km*/
-
-.contenedor-header5km {
+   
 
 
- background-image: url('../mas/obtentusprimeroskm/img/maraton-personas.jpg') !important; 
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    height:390px;
-    color: rgb(255, 255, 255);
-
-
-}
 /* Contenedor responsive para video de YouTube */
 .video-container {
   position: relative;
@@ -437,6 +365,7 @@ font-family: "Barlow Condensed", sans-serif;
 
 
 .banner-musica {
+      /*no borrar*/ 
  background-image: url('../img/logo-fondo.jpg'); 
  background-repeat: repeat;
   height: 400px; 
@@ -447,21 +376,32 @@ font-family: "Barlow Condensed", sans-serif;
  
 
 }
+/*playlist spotify*/ 
+/*playlist spotify*/ 
+/*playlist spotify*/ 
+/*playlist spotify*/ 
+.fondospotify{
+    /*no borrar*/ 
+  margin: 0;
+  padding: 40px 40px;
+  background-color: #949393;
+  min-height: 100vh; /* asegura que cubra toda la altura */
+    
+}
+.card {
+      --bs-card-bg: #6d6c6c;
+color:#f5e7e3
+}
+
 
 .contenido-banner { 
-    color: #004aad;
+  /*no borrar*/ 
   background-color: rgba(11, 73, 187, 0.9); 
   padding: 2rem;
   border-radius: 0.5rem;
 }
-/*header runnging */ 
-.tituloheroe{
-    font-size:3em;
-    color: white!important;
-}
-.bannerparrafo{
-      font-size:1.8em
-}
+
+
 .fondoarticulo{
     background-color:#7fadeb; 
     width: 100%;
@@ -481,4 +421,11 @@ font-family: "Barlow Condensed", sans-serif;
 .textocolor{
     padding-left: 20px;
 }
-  }
+
+.imagenprincipal{    
+    background-size: cover; /* Asegura que la imagen cubra todo el div */  
+    height: 480px;
+    
+   
+}   
+   }
