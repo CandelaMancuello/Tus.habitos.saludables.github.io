@@ -240,9 +240,15 @@ font-family: "Barlow Condensed", sans-serif;
     font-size: x-large;
   
 }
-.banneriniciohome{
-    margin-top: 48px;
+.contenedorinicio{
+  padding:0px;
+  height: 480px;
 }
+.contenedorinicio img{
+ 
+  height: 480px;
+}
+
 
  .featurette-divider{
 
@@ -262,13 +268,6 @@ font-family: "Barlow Condensed", sans-serif;
  
 }
 
-
-/*pagina de recetas*/
-.recetas-lista {
-    justify-content: center;
-    list-style-type: none !important;
-    align-items: center;
-}
 .fondodesktop {
   background: linear-gradient(to top, #ff7e5f, #ebb09e); 
   padding-bottom:20px;
@@ -391,7 +390,7 @@ font-family: "Barlow Condensed", sans-serif;
     
 }
 .recetascolores {
-      --bs-card-bg: #312121;
+      --bs-card-bg: #6d5353;
 color:#f5e7e3
 }
 
@@ -444,5 +443,13 @@ color:#f5e7e3
     border-radius: 0.5rem;
   }
 
+/*pagina de recetas*/
+.agrandartext{
 
+  font-size: 1.3em;
+
+}
+
+
+  
    }
