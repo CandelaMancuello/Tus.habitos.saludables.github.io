@@ -88,26 +88,25 @@ const todasLasPreguntas = [
 //se verifica que se haya ingresado nombre y correo
   //antes de subir a la web de nuevo use esto para eliminar los mails utilizados y  para que prueben el juego algun amigo que yo ya habia usados sus mails y estan guardados//
   //  localStorage.clear(); utilice esta funcion 1 vez para limpiar el storage y luego actualizo en github //
-  btnStart.onclick = () => { 
+btnStart.onclick = () => { 
   const nombre = nombreInput.value.trim();
   const email = emailInput.value.trim();
 
-  if (nombre === "" || email ===  "") {
+  if (nombre === "" || email === "") {
     alert("Por favor, completá tu nombre y correo.");
     return;
   }
 
   const jugadores = JSON.parse(localStorage.getItem("jugadores") || "[]"); 
+  console.log("Jugadores guardados:", jugadores.map(j => j.email));
 
-  const emailCodificado = btoa(email); // codifica el email con base64
-
-  const yaJugado = jugadores.some(j => j.email === emailCodificado);
+  const yaJugado = jugadores.some(j => j.email === email);
   if (yaJugado) {
     alert("Este correo ya participó. Solo se permite una vez por persona.");
     return;
   }
 
-  jugadores.push({ nombre, email: emailCodificado }); // guarda el email codificado
+  jugadores.push({ nombre, email }); // Guarda email sin codificar
   localStorage.setItem("jugadores", JSON.stringify(jugadores));
 
   bienvenido.innerHTML = `<p class="alert alert-success">¡Hola ${nombre}! Vas a jugar 5 rondas. Seleccioná 3 alimentos en cada una. Tenés 10 segundos para responder. ¡A jugar!</p>`;
@@ -116,6 +115,7 @@ const todasLasPreguntas = [
 
   mostrarPregunta();
 };
+
 
 function mostrarPregunta() { //ESta funcion genera los botones de opciones y permite selecionar hasta 3 //
   const pregunta = todasLasPreguntas[preguntaActualIdx];
