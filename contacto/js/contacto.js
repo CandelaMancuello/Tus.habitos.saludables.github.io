@@ -16,3 +16,4 @@
     });
   });
 
+//me quede con el scrip nrmal tranqui too funciona ok //
