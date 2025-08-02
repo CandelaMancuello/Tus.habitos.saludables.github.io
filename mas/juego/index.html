@@ -60,31 +60,59 @@
 </nav>
 </header>
 <main class="container py-4">
- <div id="inicio-section" class="container my-5">
-  <input type="text" id="nombre" class="form-control mb-2" placeholder="Ingresa tu nombre" />
-  <input type="email" id="email" class="form-control mb-2" placeholder="Ingresa tu correo" />
-  <button id="btn-start" class="btn btn-primary w-100">Iniciar Juego</button>
+  <div class="introContainer"> <!-- esta linea es especifica porque le agrege un nuevo estilo de boostrap-->
+    <!--son como 2 cards que muestran una introduccion, reglas y a la derecha el formulario del jueggo-->
+    <!-- la classe introContainer lo que hace es ocultar ese nuevo estilo una vez que comienza el juego-->
+  <!-- Aquí va toda esa parte de introducción y visuales -->
+
+<div class="d-flex flex-row justify-content-between">
+
+  <div class="row align-items-md-stretch" style="flex:1; margin-right:10px;">
+    <div class="fondojuego h-100 p-5 rounded-3"> 
+      <h2>Trivia Saludable</h2> 
+      <p>Las reglas son sencillas: tenes que elegir por cada pregunta 3 opciones, las más saludables tendrán más puntajes. Una vez finalizada la trivia, se sumarán los puntajes obtenidos y podrás obtener un descuento de compra.</p>
+  Cada opción que elijas tendrá cierto puntaje (sí es saludable o no, o si la pregunta pide "priorizar proteínas").
+  Si no respondes a tiempo, en 15 segundos, se te descontarán 2 puntos por respuestas.
+  Recuerda que hay alimentos que suman muy poco puntaje.</p>
+    </div>
+  </div>
+
+  <!-- Segundo div: Formulario -->
+  <div class="row align-items-md-stretch" style="flex:1; margin-left:10px;">
+    <div class="fondojuegoformulario h-100 p-5 border rounded-3">
+      <div class="inicio-section container my-5">
+        <input type="text" class="nombre form-control mb-2" placeholder="Ingresa tu nombre" />
+        <input type="email" class="email form-control mb-2" placeholder="Ingresa tu correo" />
+        <button class="btn-start btn-visually-impactful">Iniciar Juego</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
-  <div id="juego-section" class="d-none">
-    <div id="bienvenido" class="mb-4"></div>
-    <h2 id="pregunta" class="mb-3"></h2>
-    <div id="opciones" class="row g-2 mb-3"></div>
-    <button id="btn-enviar" class="btn btn-primary w-100" disabled>Enviar</button>
-    <div id="contador" class="mt-2 text-center"></div>
+<div class="resultado-descuento"></div>
+
+<div class="juego-section d-none">
+  <div class="bienvenido mb-4"></div>
+  <h2 class="pregunta mb-3"></h2>
+  <div class="opciones row g-2 mb-3"></div>
+  <button class="btn-enviar btn btn-primary w-100" disabled>Enviar</button>
+  <div class="contador mt-2 text-center"></div>
+</div>
+
+<div class="resultado-section d-none">
+  <div class="resultado my-3"></div>
+
+  <div class="mb-3">
+    <div class="barra-salud bg-secondary">
+      <div class="barra-energia barra-inner"></div>
+    </div>
   </div>
 
-  <div id="resultado-section" class="d-none">
-    <div id="resultado" class="my-3"></div>
-     <div id="resultadoDescuento"></div> <!-- para msotrar las tarjetas de descuentos tipo cupones-->
-    <div class="mb-3">
-      <div class="barra-salud bg-secondary">
-        <div id="barra-energia" class="barra-inner"></div>
-      </div>
-    </div>
-    <button id="btn-reiniciar" class="btn btn-outline-dark w-100">Reiniciar Juego</button>
-  </div>
+  <button class="btn-reiniciar btn btn-outline-dark w-100">Reiniciar Juego</button>
+</div>
+
   
 </main>
 

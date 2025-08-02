@@ -449,5 +449,20 @@ color:#b8003d;
 
 }
 
-  
+  .fondojuego{
+    background-color: #fd855a;
+  }
+
+  .fondojuegoformulario{
+  background-color: #0b49bbe6; 
+  }
+  /*estilos al boton de INICIAR JUEGO*/
+  .btn-visually-impactful {
+    background-color:  #fd855a; /* azul de bootstrap */
+    color: #302020; /* texto en blanco */
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 3px solid #0069d9; /* borde más grueso y en tono más oscuro */
+    font-size: 1.2em;
+  }
    }
