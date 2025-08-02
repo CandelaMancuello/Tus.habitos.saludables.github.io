@@ -113,9 +113,6 @@ font-family: "Barlow Condensed", sans-serif;
 }
 /*PIE DE PAGINA PLAYLIST*/
 
-.playlistcss{
-    align-items: center;
-}
 
 
 
@@ -152,38 +149,48 @@ font-family: "Barlow Condensed", sans-serif;
 }
 /*pagina de rutina muscular*/ 
 .bannergym{
-    background-color:#6cabff ;
-    padding-top: 20px;
-   height: 150px;
+     background-image: url('../gym/img/fondoheader.jpg');
+ 
+ /* Cambia esto con la ruta a tu imagen */  
+    background-size: cover; /* Asegura que la imagen cubra todo el div */  
+    background-position: center; /* Centra la imagen */  
+    background-repeat: no-repeat; /* Evita que la imagen se repita */  
+    min-height: 390px; /* Ajusta la altura mínima según sea necesario */  
+    color: white; /* Cambia el color del texto para mayor contraste */  
+    position: relative; /* Puede ser útil si agregas contenido sobre la imagen */ 
+
   
    
 } 
 /*pagina para indumentaria mobile*/ 
 .fondoindumentaria{
-    background-color: rgb(255, 134, 130);
+    background-color: #ff8682;
 }
 /* ============================
-   Estilos base para mobile 
+   Estilos base para mobile  juego
    ============================
-*/
+
+
 /* ============================
-   Estilos base para mobile 
-   ============================
-*/
-/* ============================   Estilos base para mobile 
-   ============================
-*/
+   Estilos SOBRE MI
+   ============================*/
+
+.sobremi-estilos{
+    padding-top: 5px;
+  
+    background-color: #ff8682;  }
+
+.mobile-mobile{
+    background-color: #004aad;
+    padding: 10px;
+}
 
 
 
 
 
-/*MEDIAQUERYS DESKTOP */
-/*MEDIAQUERYS DESKTOP */
-/*MEDIAQUERYS DESKTOP */
-/*MEDIAQUERYS DESKTOP */
-/*MEDIAQUERYS DESKTOP */
-/*MEDIAQUERYS DESKTOP */
+
+/*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP *//*MEDIAQUERYS DESKTOP */
 
 @media (min-width : 1024px) {
     /*navbar*/ 
@@ -241,10 +248,22 @@ font-family: "Barlow Condensed", sans-serif;
  
  /*CONTENEDOR DE CARD DEL INICIO*/ 
  .estilosdeCardsInicio{
-   margin-top:  20px;
+   margin-top:5px;
    padding-top: 4rem !important;
+   background: linear-gradient(to top, #fd855a, rgba(253, 133, 90, 0)); 
+}
+
+ /*la data de los fechas de publicacion de Cards  */
+
+.fechaCards {
+    font-size: 1em;
+    color: #f9fcff; /* Color gris claro */
+  
+  }
+  .tarjetas{
+    height:430px;
+  }
  
- }
 
 #navbarNav, .container-fluid{
     background-color: rgb(255, 255, 255);
@@ -260,16 +279,31 @@ font-family: "Barlow Condensed", sans-serif;
 }
 /*pagina rutinamuscular*/
 .bannergym{
-    background-color:#f9a490 ;
-    height: 390px;
-    padding-top: 20px;
- 
+    background-image: url('../gym/img/fondoheader.jpg') !important; 
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    height:390px;
+    color: rgb(255, 255, 255);
+    width: 93%;
+        margin: 0px, 27.5px;
+        padding: 0px, 12px;
 } 
  .featurette-divider{
-color:#004aad;
-    border-top: 5px solid #004aad;
+
+    border-top: 5px solid#5a43e1;
     margin: 20px 0;
  }
+ /*titulo de cards*/ 
+ .tepuedeinteresar {
+    text-align: center;
+    font-size:xx-large;
+    color:#3e3f41
+ }
+ 
+ .color-fondo{
+  
+  background: linear-gradient(to top, #ff7e5f, #f5e7e3); /* Degradado de izquierda a derecha entre dos colores */
+ 
+}
 
 
 /*pagina de recetas*/
@@ -386,4 +420,65 @@ color:#004aad;
   border: 0;
 }
 
+/*estilos SOBRE MI DESKTOP*/ 
+.sobremi-estilos{
+    height: 500px;
+    width: 100%; 
+    margin: 0 auto; /* centra horizontalmente */
+    background-color: #f3c634;
+    padding: 20px; 
+      text-align: center;
+ 
+   
+}
+/*esilos en seccion para la playlist/ running*/
+/*esilos en seccion para la playlist/ running*/
+/*esilos en seccion para la playlist/ running*/
+
+
+.banner-musica {
+ background-image: url('../img/logo-fondo.jpg'); 
+ background-repeat: repeat;
+  height: 400px; 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+ 
+
+}
+
+.contenido-banner { 
+    color: #004aad;
+  background-color: rgba(11, 73, 187, 0.9); 
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+/*header runnging */ 
+.tituloheroe{
+    font-size:3em;
+    color: white!important;
+}
+.bannerparrafo{
+      font-size:1.8em
+}
+.fondoarticulo{
+    background-color:#7fadeb; 
+    width: 100%;
+}
+.fondoarticulogym{
+    background-color:#ebb09e; 
+    width: 100%;
+}
+.featurette {
+  display: flex;
+  align-items: center;
+
+}
+.textozapatillas{
+    padding-right: 15px;
+}
+.textocolor{
+    padding-left: 20px;
+}
   }
