@@ -82,7 +82,12 @@ const todasLasPreguntas = [
       { texto: "Cerveza", puntos: 1 }
     ]
   }
-];
+];   
+
+
+/*cargo un sonido para el start*/ 
+    // Cargar el sonido
+const sonidoSilbato = new Audio("sonido/sonidojuego.mp3"); //
 
 // Iniciar juego// boton de iniciar juego
 //se verifica que se haya ingresado nombre y correo
@@ -104,6 +109,7 @@ btnStart.onclick = () => {
     alert("Este correo ya participó. Solo se permite una vez por persona.");
     return;
   }
+    sonidoSilbato.play(); // <<--- REPRODUCIR SONIDO AQUÍ
 
   jugadores.push({ nombre, email }); // guarda el email sin codificar
   localStorage.setItem("jugadores", JSON.stringify(jugadores));
@@ -127,6 +133,10 @@ function mostrarPregunta() { //ESta funcion genera los botones de opciones y per
     btn.className = "btn btn-lg btn-outline-primary m-2 w-100";
     btn.textContent = opcion.texto;
     btn.dataset.index = i; //guarda el índice de cada opción para saber cuál fue seleccionada
+
+
+
+
 
     btn.onclick = () => {
       const index = seleccionadas.indexOf(i);
