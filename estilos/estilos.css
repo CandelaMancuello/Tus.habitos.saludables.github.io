@@ -130,7 +130,7 @@ font-family: "Barlow Condensed", sans-serif;
 
 /*pagina para indumentaria mobile*/ 
 .fondoindumentaria{
-    background-color: #ff8682;
+     background: linear-gradient(to top,  #0c58bb,   #bdd1eb   ); 
 }
 /* ============================
    Estilos base para mobile  juego
@@ -167,7 +167,7 @@ font-family: "Barlow Condensed", sans-serif;
   }
 
   .fondojuegoformulario {
-    background-color: #ff8682 ;/* gris claro */
+    background-color: #004aad;/* gris claro */
     color: #333;
     border: 1px solid #ccc;
   }
@@ -296,11 +296,7 @@ font-family: "Barlow Condensed", sans-serif;
   padding-bottom:20px;
 }
 
-/*pagina para indumentaria*/
-.fondoindumentaria {
-    margin-top: 48px;
-    background-color: rgb(209, 205, 236);
-}
+
 
 .textobannernutri{
     
@@ -408,7 +404,7 @@ font-family: "Barlow Condensed", sans-serif;
     
 }
 .recetascolores {
-      --bs-card-bg: #6d5353;
+      --bs-card-bg:  linear-gradient(to top, #ff7e5f, #ebb09e); 
 color:#f5e7e3
 }
 
@@ -422,7 +418,7 @@ color:#f5e7e3
 
 
 .fondoarticulo{
-    background-color:#7fadeb; 
+    background-color:#599bf4;
     width: 100%;
 }
 .fondoarticulogym{
@@ -468,7 +464,7 @@ color:#f5e7e3
 
 }
 .colordecardsletras{
-color:#b8003d;
+color:#0b49bbe6;
 
 }
 
@@ -477,7 +473,7 @@ color:#b8003d;
   }
 
   .fondojuegoformulario{
-  background-color: #0b49bbe6; 
+  background-color:  
   }
   /*estilos al boton de INICIAR JUEGO*/
   .btn-visually-impactful {
@@ -497,7 +493,7 @@ color:#b8003d;
 
 
   .fondosdemusicaSound{
-    background-color: #3d97f7;
+    background-color: #599bf4;
     padding: 20px;
   }
   .parrafoinicioZ{
