@@ -9,7 +9,7 @@ function calcularDias(fechaReferencia) {
 
 // Fechas de publicacion
 const fechaBase1 = "2025-01-25"; 
-const fechaBase2 = "2025-02-03"; 
+const fechaBase2 = "2025-08-03"; 
 
 
 // Asignar valores dinámicamente
