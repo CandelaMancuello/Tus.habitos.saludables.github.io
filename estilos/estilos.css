@@ -404,7 +404,7 @@ font-family: "Barlow Condensed", sans-serif;
     
 }
 .recetascolores {
-      --bs-card-bg:  linear-gradient(to top, #ff7e5f, #ebb09e); 
+      background-color: #004aad;
 color:#f5e7e3
 }
 
